@@ -1,0 +1,28 @@
+#Title {
+    font-size: 4rem;
+    text-align: center;
+
+    .name {
+        font-size: 2rem;
+    }
+}
+
+.go {
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #094b81;
+    text-align: center;
+    cursor: pointer;
+    font-size: 3rem;
+    :hover {
+        font-size: 3.8rem;
+    }
+    span {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+
+        
+    }
+}
