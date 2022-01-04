@@ -1,7 +1,7 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-04 13:01:21
- * @LastEditTime: 2022-01-04 16:26:31
+ * @LastEditTime: 2022-01-04 16:51:03
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
  * @FilePath: \revealJs\src\pages\Index.vue
@@ -18,15 +18,23 @@
       <div class="name">MarkDown语法写幻灯片</div>
     </div>
     <div class="go">
-      <span href="./md2ppt">GO!</span>
+      <span>GO!</span>
     </div>
+    <a id="foot" href="https://blog.wanqqq29.cn/" target="_blank">
+      &copy;闪梦Lab
+    </a>
   </q-page>
 </template>
 <style lang="scss" scoped src="../css/index.scss"></style>
 <script>
 import { defineComponent } from "vue";
-
 export default defineComponent({
   name: "PageIndex",
+
+  setup(){
+
+    return{
+    }
+  }
 });
 </script>
