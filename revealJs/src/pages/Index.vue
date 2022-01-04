@@ -1,10 +1,10 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-04 13:01:21
- * @LastEditTime: 2022-01-04 16:51:03
+ * @LastEditTime: 2022-01-04 22:04:49
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
- * @FilePath: \revealJs\src\pages\Index.vue
+ * @FilePath: \RevealJs\revealJs\src\pages\Index.vue
 -->
 <template>
   <q-page class="flex flex-center" style="flex-direction: column">
@@ -17,7 +17,7 @@
       <strong>S Dream Lab</strong>
       <div class="name">MarkDown语法写幻灯片</div>
     </div>
-    <div class="go">
+    <div class="go" @click="go()">
       <span>GO!</span>
     </div>
     <a id="foot" href="https://blog.wanqqq29.cn/" target="_blank">
@@ -32,8 +32,11 @@ export default defineComponent({
   name: "PageIndex",
 
   setup(){
-
+    const go = ()=>{
+      window.location.href="#/test"
+    }
     return{
+      go
     }
   }
 });
