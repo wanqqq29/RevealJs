@@ -1,25 +1,23 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-04 21:54:50
- * @LastEditTime: 2022-01-04 23:58:23
+ * @LastEditTime: 2022-01-06 22:21:30
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
  * @FilePath: \RevealJs\revealJs\src\components\preview.vue
 -->
 <template>
   This is Preview.vue
-  <div class="reveal" id="content">>
-    <section data-markdown>
-      <textarea data-template>
-    ## Slide 1
-    A paragraph with some text and a [link](http://hakim.se).
-    ---
-    ## Slide 2
-    ---
-    ## Slide 3
-  </textarea
-      >
-    </section>
+  <div class="reveal" id="content">
+    <div class="slides">
+      <section
+        :data-markdown=markdown_data
+        data-separator="^\n\n\n"
+        data-separator-vertical="^\n\n"
+      ></section>
+      <section data-markdown>## 1</section>
+      <section data-markdown>## 2</section>
+    </div>
   </div>
 </template>
 
@@ -29,15 +27,15 @@
 </style>
 
 <script>
-import { onMounted } from "vue";
+import { onMounted,ref } from "vue";
 import Reveal from "reveal.js";
-import Markdown from "reveal.js/plugin/markdown/markdown.esm.js";
 import RevealMarkdown from "reveal.js/plugin/markdown/markdown.js";
-
 export default {
   name: "preview",
 
   setup() {
+    const markdown_data = ref("# markdown \n --- \n # aaa")
+    
     const init = () => {
       let deck = new Reveal({
         plugins: [RevealMarkdown],
@@ -48,6 +46,10 @@ export default {
     onMounted(() => {
       init();
     });
+
+    return{
+      markdown_data
+    }
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-04 21:51:48
- * @LastEditTime: 2022-01-04 22:04:02
+ * @LastEditTime: 2022-01-06 15:48:01
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
  * @FilePath: \RevealJs\revealJs\src\pages\test.vue
@@ -16,6 +16,7 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped src="../css/edit.scss"></style>
 
 <script>
 import edit from "../components/edit.vue";
