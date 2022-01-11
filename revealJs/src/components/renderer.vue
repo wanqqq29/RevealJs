@@ -1,30 +1,29 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-11 14:59:55
- * @LastEditTime: 2022-01-11 15:22:46
+ * @LastEditTime: 2022-01-11 16:50:13
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
  * @FilePath: \revealJs\src\components\renderer.vue
 -->
 <template>
-<div v-html="compiledMarkdown"></div>
+  <div v-html="compiledMarkdown"></div>
 </template>
 
 <script>
-import { ref, onMounted, computed, reactive } from "vue";
+import { ref, onMounted, watchEffect, reactive } from "vue";
 import Marpit from "@marp-team/marpit";
 
 export default {
   name: "renderer",
-  props:{
-    input:String,
+  props: {
+    from_index_input: String,
   },
   setup(props, context) {
-
     const marpit = new Marpit({
       inlineSVG: true,
     });
-  
+
     const theme = `
     /* @theme example */
 
@@ -48,18 +47,29 @@ export default {
 
     marpit.themeSet.default = marpit.themeSet.add(theme);
 
-    const markdown = String(props.input)
-    const { html, css } = marpit.render(markdown);
-    const  compiledMarkdown = html+'<style>'+css+'</style>'
+    const markdown = reactive({
+      data: "",
+    });
 
-    onMounted(()=>{
-        // context.emit('render_html',compiledMarkdown)
-        // console.log(markdown);
-        // console.log(typeof(markdown));
-    })
+    // const { html, css } = marpit.render(markdown.data);
+    const compiledMarkdown = ref('')
+    const init = () => {
+      const { html, css } = marpit.render(markdown.data);
+       compiledMarkdown.value = html + "<style>" + css + "</style>";
+    };
+
+    watchEffect(() => {
+      markdown.data = String(props.from_index_input);
+      init();
+    });
+    onMounted(() => {
+      init()
+    });
     return {
       marpit,
-      compiledMarkdown
+      compiledMarkdown,
+      markdown,
+      init,
     };
   },
 };

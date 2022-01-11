@@ -1,7 +1,7 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-04 21:51:48
- * @LastEditTime: 2022-01-11 16:01:10
+ * @LastEditTime: 2022-01-11 16:50:19
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
  * @FilePath: \revealJs\src\pages\test.vue
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="col-6 cLeft">
-      <renderer :input="output" />
+      <renderer :from_index_input="output" />
     </div>
   </div>
 </template>
@@ -28,18 +28,19 @@ export default {
   },
   setup() {
     // 用户输入数据
-    const input = ref(`# Hello!`);
+    const input = ref("# Hello!");
 
     // 经过处理后的数据
-    const output = ref("# Hello!");
-    const update = () => {
-      output.value = input.value;
-      console.log(output.value, "1");
+    const output = computed(()=>{
+      return input.value
+    })
+    const update = (e) => {
+      input.value = e.target.value;
     };
     return {
       input,
-      update,
       output,
+      update,
     };
   },
 };
