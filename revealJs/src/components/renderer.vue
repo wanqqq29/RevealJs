@@ -1,7 +1,7 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-11 14:59:55
- * @LastEditTime: 2022-01-13 15:25:44
+ * @LastEditTime: 2022-01-13 16:54:48
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
  * @FilePath: \revealJs\src\components\renderer.vue
@@ -47,6 +47,7 @@
     <div>到底了</div>
   </div>
 </template>
+<style scoped src="../css/github.css"></style>
 <style lang="scss" scoped src="../css/renderer.scss"></style>
 
 <script>
@@ -71,20 +72,23 @@ export default {
     /* @theme example */
 
     section {
-      background-color: #369;
+      background:url("https://gitee.com/wanqqq29/vnote_images/raw/master/markdown%E6%96%87%E4%BB%B6%E5%A4%B9/%E5%85%B6%E4%BB%96/%E8%AE%B0%E4%BA%8B%E6%9C%AC/%E8%AE%B0%E4%BA%8B%E6%9C%AC(%E4%BB%80%E4%B9%88%E9%83%BD%E8%AE%B0).md/152303316238580.png");
       color: #fff;
       font-size: 30px;
       padding: 40px;
     }
 
-    h1,
-    h2 {
-      text-align: center;
+    h1{
       margin: 0;
+      position: absolute;
+      top: 15px;
+      left: 160px;
     }
+    .marpit  svg  foreignObject  section::after{
+      color:black;
+    }
+    h2,h3,h4,h5,h6 {
 
-    h1 {
-      color: #8cf;
     }
     `;
 

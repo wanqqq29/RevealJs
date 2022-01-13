@@ -1,7 +1,7 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-11 14:59:55
- * @LastEditTime: 2022-01-13 14:12:59
+ * @LastEditTime: 2022-01-13 16:34:18
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
  * @FilePath: \revealJs\src\components\renderer copy.vue
@@ -52,12 +52,11 @@ export default {
       },
     });
     
-
     const theme = `
     /* @theme example */
 
     section {
-      background-color: #369;
+      background:url("https://gitee.com/wanqqq29/vnote_images/raw/master/markdown%E6%96%87%E4%BB%B6%E5%A4%B9/%E5%85%B6%E4%BB%96/%E8%AE%B0%E4%BA%8B%E6%9C%AC/%E8%AE%B0%E4%BA%8B%E6%9C%AC(%E4%BB%80%E4%B9%88%E9%83%BD%E8%AE%B0).md/152303316238580.png");
       color: #fff;
       font-size: 30px;
       padding: 40px;
