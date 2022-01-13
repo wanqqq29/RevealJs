@@ -1,7 +1,7 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-04 13:01:21
- * @LastEditTime: 2022-01-13 09:17:05
+ * @LastEditTime: 2022-01-13 15:15:01
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
  * @FilePath: \revealJs\src\pages\Index.vue
@@ -35,7 +35,7 @@ export default defineComponent({
 
   setup() {
     const go = () => {
-      window.location.href = "#/test";
+      window.location.href = "#/edit";
     };
     return {
       go,

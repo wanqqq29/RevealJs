@@ -1,7 +1,7 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-04 21:51:48
- * @LastEditTime: 2022-01-13 14:17:35
+ * @LastEditTime: 2022-01-13 15:13:33
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
  * @FilePath: \revealJs\src\pages\test.vue
@@ -22,7 +22,7 @@
 </template>
 <style lang="scss" scoped src="../css/edit.scss"></style>
 <script>
-import { ref, onMounted, computed, reactive } from "vue";
+import { ref,computed } from "vue";
 import renderer from "../components/renderer.vue";
 export default {
   components: {

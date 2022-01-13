@@ -136,9 +136,9 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: `reveal-js`,
-        short_name: `reveal-js`,
-        description: `md2ppt`,
+        name: `mark2slide`,
+        short_name: `mark2slide`,
+        description: `使用MarkDown语法生成幻灯片`,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -203,7 +203,7 @@ module.exports = configure(function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'reveal-js'
+        appId: 'mark2slide'
       },
 
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain

@@ -1,8 +1,8 @@
 {
-  "name": "reveal-js",
+  "name": "mark2slide",
   "version": "0.0.1",
-  "description": "md2ppt",
-  "productName": "reveal-js",
+  "description": "使用MarkDown语法生成幻灯片",
+  "productName": "mark2slide",
   "author": "wanqqq29 <wanqqq29@gmail.com>",
   "private": true,
   "scripts": {

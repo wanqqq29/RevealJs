@@ -1,13 +1,13 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-11 14:59:55
- * @LastEditTime: 2022-01-13 14:45:00
+ * @LastEditTime: 2022-01-13 15:25:44
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
  * @FilePath: \revealJs\src\components\renderer.vue
 -->
 
-// TODO // 预览组件导出 // 主题定制
+// TODO // 预览组件导出√ // 主题定制
 
 <template>
   <div style="height: 100vh">
@@ -34,6 +34,12 @@
           text-color="black"
           @click="share_web"
           icon="share"
+        />
+        <q-fab-action
+          color="amber"
+          text-color="black"
+          @click="change_theme"
+          icon="palette"
         />
       </q-fab>
     </q-page-sticky>
@@ -96,7 +102,7 @@ export default {
     };
 
     let timeStamp = Date.now();
-    let formattedString = date.formatDate(timeStamp, 'YYYY-MM-DDTHH')
+    let formattedString = date.formatDate(timeStamp, "YYYY-MM-DDTHH");
 
     // pdf导出
     const export_pdf = () => {
@@ -124,8 +130,10 @@ export default {
     };
 
     // 导出web分享
-    const share_web= () =>{}
+    const share_web = () => {};
 
+    //更换主题
+    const change_theme = () => {};
     watchEffect(() => {
       markdown.data = String(props.from_index_input);
       init();
@@ -140,6 +148,7 @@ export default {
       init,
       export_pdf,
       share_web,
+      change_theme,
     };
   },
 };

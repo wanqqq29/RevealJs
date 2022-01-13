@@ -1,6 +1,7 @@
-# reveal-js (reveal-js)
 
-md2ppt
+# mark2slide
+
+使用MarkDown语法生成幻灯片
 
 ## Install the dependencies
 ```bash
