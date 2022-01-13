@@ -1,12 +1,14 @@
 .mainbox {
-    height: 100vh;
-
     .cRight {
         border-right: 1px solid black;
+        overflow-x: auto;
     }
 
     .cLeft {
         border-left: 1px solid black;
+        overflow-x: auto;
+
+
     }
 
     #edit {

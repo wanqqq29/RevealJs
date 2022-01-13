@@ -1,14 +1,15 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-04 21:51:48
- * @LastEditTime: 2022-01-11 16:50:19
+ * @LastEditTime: 2022-01-13 14:17:35
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
  * @FilePath: \revealJs\src\pages\test.vue
 -->
 <template>
+<section>
   <div class="row mainbox">
-    <div class="col-6 cRight">
+    <div class="col-6 cRight " >
       <div id="edit">
         <textarea :value="input" @input="update"></textarea>
       </div>
@@ -17,6 +18,7 @@
       <renderer :from_index_input="output" />
     </div>
   </div>
+</section>
 </template>
 <style lang="scss" scoped src="../css/edit.scss"></style>
 <script>
@@ -28,7 +30,15 @@ export default {
   },
   setup() {
     // 用户输入数据
-    const input = ref("# Hello!");
+    const input = ref(`---
+  paginate: true
+---
+
+<!--_paginate: false -->
+# **Hello!**
+
+---
+## 你好！`);
 
     // 经过处理后的数据
     const output = computed(()=>{
