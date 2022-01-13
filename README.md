@@ -1,5 +1,5 @@
 # mark2slide
-> 使用MarkDown语法生成幻灯片
+> 通过marpit将markdown语法的文本转成ppt。通过在线编辑，实现实时预览。
 
 ## 介绍
 ![](https://gitee.com/wanqqq29/vnote_images/raw/master/280890615220154.png)
