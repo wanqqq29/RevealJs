@@ -1,10 +1,10 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-04 21:51:48
- * @LastEditTime: 2022-01-13 15:13:33
+ * @LastEditTime: 2022-01-14 10:25:56
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
- * @FilePath: \revealJs\src\pages\test.vue
+ * @FilePath: \revealJs\src\pages\edit.vue
 -->
 <template>
 <section>
@@ -36,9 +36,31 @@ export default {
 
 <!--_paginate: false -->
 # **Hello!**
+## aa
+### aaa
+#### aaa
+##### 5
+###### 6
+
+### [融合句法规则和CNN的旅游评论情感分析](https://www.cnki.com.cn/Article/CJFDTotal-SJSJ201911047.htm)
+- a
+  - **aa**
+- 11
+- aa
 
 ---
-## 你好！`);
+
+# 你好！
+- a
+  - aa
+- 11
+- aa
+
+> aaaaaa
+
+---
+
+![w:500px, h:600px](https://gitee.com/wanqqq29/vnote_images/raw/master/markdown文件夹/其他/记事本/记事本(什么都记).md/87994610221192.png)![w:500px, h:400px](https://gitee.com/wanqqq29/vnote_images/raw/master/markdown文件夹/其他/记事本/记事本(什么都记).md/359494610211722.png)`);
 
     // 经过处理后的数据
     const output = computed(()=>{
