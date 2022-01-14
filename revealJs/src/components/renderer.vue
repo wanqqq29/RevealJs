@@ -1,7 +1,7 @@
 <!--
  * @Author: wanqqq29
  * @Date: 2022-01-11 14:59:55
- * @LastEditTime: 2022-01-13 16:54:48
+ * @LastEditTime: 2022-01-14 09:09:13
  * @LastEditors: wanqqq29
  * @Description: blog.wanqqq29.cn
  * @FilePath: \revealJs\src\components\renderer.vue
@@ -72,7 +72,7 @@ export default {
     /* @theme example */
 
     section {
-      background:url("https://gitee.com/wanqqq29/vnote_images/raw/master/markdown%E6%96%87%E4%BB%B6%E5%A4%B9/%E5%85%B6%E4%BB%96/%E8%AE%B0%E4%BA%8B%E6%9C%AC/%E8%AE%B0%E4%BA%8B%E6%9C%AC(%E4%BB%80%E4%B9%88%E9%83%BD%E8%AE%B0).md/152303316238580.png");
+      background:url("https://gitee.com/wanqqq29/vnote_images/raw/master/markdown文件夹/其他/记事本/记事本(什么都记).md/499010809226448.png");
       color: #fff;
       font-size: 30px;
       padding: 40px;
